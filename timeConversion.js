@@ -9,6 +9,6 @@ function timeConversion(s) {
     hour = '00'
   }
   const result = String(hour).length === 1? `0${hour}${s.slice(2,-2)}` :`${hour}${s.slice(2,-2)}`
-  console.log(result);
+  return result
 }
 timeConversion('12:45:54PM')
